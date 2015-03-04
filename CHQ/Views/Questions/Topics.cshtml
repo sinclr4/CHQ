@@ -1,0 +1,24 @@
+﻿@model CHQ.Models.Topics
+
+@{
+    ViewBag.Title = "Topics";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+
+<h2>Topics</h2>
+
+
+<dl class="dl-horizontal">
+    @foreach (var dog in Model.AllTopics)
+    {
+
+        <a class="details" href="@Url.Action("QuestionList", new {id = dog.ID})">
+            @dog.ID.Replace("-", " ")
+        </a>
+     
+       <br /> 
+            }
+           
+
+
