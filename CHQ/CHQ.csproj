@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CommonMark">
+      <HintPath>..\packages\CommonMark.NET.0.8.4\lib\net45\CommonMark.dll</HintPath>
+    </Reference>
     <Reference Include="Contentful.NET">
       <HintPath>..\packages\Contentful.NET.0.0.5-Alpha\lib\net45\Contentful.NET.dll</HintPath>
     </Reference>

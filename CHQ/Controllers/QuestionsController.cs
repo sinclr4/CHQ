@@ -11,6 +11,7 @@ using Contentful.NET.Search;
 using Contentful.NET;
 using Contentful.NET.Search.Filters;
 using CHQ.Models;
+using CommonMark.Parser;
 
 
 namespace CHQ.Controllers
@@ -138,7 +139,7 @@ namespace CHQ.Controllers
                     .Select(subject => new Question()
                     {
                         Title = subject.SystemProperties.Id,
-                        Body = subject.GetString("body")
+                        Body = CommonMark.CommonMarkConverter.Convert(subject.GetString("body"))
                         // Title = subject.Name
 
 
