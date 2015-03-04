@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHQ", "CHQ\CHQ.csproj", "{88BDDF69-0B36-4D49-8714-3B53BFAA3D73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{C8D4B856-99C7-4DF9-AD73-DBE06818CBC7}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{113CD354-A46D-49BD-98B2-C019327E8FFF}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\CHQ-WAWS-dev.json = PublishScripts\Configurations\CHQ-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88BDDF69-0B36-4D49-8714-3B53BFAA3D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88BDDF69-0B36-4D49-8714-3B53BFAA3D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88BDDF69-0B36-4D49-8714-3B53BFAA3D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88BDDF69-0B36-4D49-8714-3B53BFAA3D73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{113CD354-A46D-49BD-98B2-C019327E8FFF} = {C8D4B856-99C7-4DF9-AD73-DBE06818CBC7}
+	EndGlobalSection
+EndGlobal
