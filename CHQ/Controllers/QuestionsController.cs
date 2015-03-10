@@ -61,9 +61,11 @@ namespace CHQ.Controllers
             {
                 // Only search for the 'Question' content type
                 new  EqualitySearchFilter(BuiltInProperties.ContentType, "3kMNZy7VCEc2oW2yy68GyK"),
-                new  FullTextSearchFilter(id)
+                new  EqualitySearchFilter("fields.topic.sys.id", id) 
+           //     new  FullTextSearchFilter(id) //- This works and is live
+          //  new EqualitySearchFilter(ContentfulItemBase.Equals("body", id))
             }
-                    //,  includeLevels: 1 // Ensure we retrieve the linked assets inside this one request - we want to get the Images for the dogs too
+           //         ,  includeLevels: 1 // Ensure we retrieve the linked assets inside this one request - we want to get the Images for the dogs too
                 );
 
 
